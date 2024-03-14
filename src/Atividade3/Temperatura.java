@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Temperatura {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        char opcao;
+        int opcao;
 
         do {
             System.out.println("Selecione a conversão:");
@@ -13,22 +13,22 @@ public class Temperatura {
             System.out.println("2 - Fahrenheit para Celsius");
             System.out.println("3 - Sair");
             System.out.print("Opção: ");
-            opcao = scanner.next().charAt(0);
+            opcao = scanner.nextInt();
 
             switch (opcao) {
-                case '1':
+                case 1:
                     converterCelsiusParaFahrenheit(scanner);
                     break;
-                case '2':
+                case 2:
                     converterFahrenheitParaCelsius(scanner);
                     break;
-                case '3':
+                case 3:
                     System.out.println("Encerrando o programa.");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (opcao != '3');
+        } while (opcao != 3);
 
         scanner.close();
     }

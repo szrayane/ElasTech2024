@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculadora {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        char opcao;
+        int opcao;
 
         do {
             System.out.println("Selecione a operação:");
@@ -15,28 +15,28 @@ public class Calculadora {
             System.out.println("4 - Divisão");
             System.out.println("5 - Sair");
             System.out.print("Opção: ");
-            opcao = scanner.next().charAt(0);
+            opcao = scanner.nextInt();
 
             switch (opcao) {
-                case '1':
+                case 1:
                     realizarSoma(scanner);
                     break;
-                case '2':
+                case 2:
                     realizarSubtracao(scanner);
                     break;
-                case '3':
+                case 3:
                     realizarMultiplicacao(scanner);
                     break;
-                case '4':
+                case 4:
                     realizarDivisao(scanner);
                     break;
-                case '5':
+                case 5:
                     System.out.println("Encerrando a calculadora.");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (opcao != '5');
+        } while (opcao != 5);
 
         scanner.close();
     }
