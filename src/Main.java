@@ -2,8 +2,7 @@
 import Atividade1.*;
 import Atividade2.*;
 import Atividade3.*;
-
-
+import Atividade4.*;
 public class Main {
     CalcularMedia c1 = new CalcularMedia();
     AntecessorSucessor antSuc = new AntecessorSucessor();
