@@ -42,7 +42,9 @@ public class Colaboradores {
             this.salarioMensal = salarioMensal;
         }
     }
-
+    public double salarioAnual(){
+        return salarioMensal * 12;
+    }
     public void aumentarSalario(double percentual) {
         double aumento = salarioMensal * (percentual / 100);
         salarioMensal += aumento;

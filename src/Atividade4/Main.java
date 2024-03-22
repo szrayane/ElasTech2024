@@ -19,6 +19,7 @@ public class Main {
         c2.aumentarSalario(10);
         System.out.println("Salário primeira colaboradora após aumento de 10%: "+ c1.getSalarioMensal());
         System.out.println("Salário segunda colaboradora após aumento de 10%: "+ c2.getSalarioMensal());
-
+        c1.getSalarioMensal();
+        System.out.println("Salário anual: "+ c1.salarioAnual());
     }
 }
