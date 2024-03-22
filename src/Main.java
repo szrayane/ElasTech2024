@@ -3,6 +3,8 @@ import Atividade1.*;
 import Atividade2.*;
 import Atividade3.*;
 import Atividade4.*;
+
+
 public class Main {
     CalcularMedia c1 = new CalcularMedia();
     AntecessorSucessor antSuc = new AntecessorSucessor();
@@ -38,5 +40,10 @@ public class Main {
     Jogo_Adivinhacao jogo = new Jogo_Adivinhacao();
 
     List_Compras lista = new List_Compras();
+
+    TarefasList met = new TarefasList();
+
+
+
 }
 

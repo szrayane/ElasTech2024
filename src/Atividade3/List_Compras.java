@@ -7,7 +7,7 @@ public class List_Compras {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArrayList<String> listaCompras = new ArrayList<>();
-        char opcao;
+        int opcao;
 
         do {
             System.out.println("Selecione a operação:");
@@ -15,28 +15,28 @@ public class List_Compras {
             System.out.println("2 - Exibir lista de compras");
             System.out.println("3 - Sair");
             System.out.print("Opção: ");
-            opcao = scanner.next().charAt(0);
+            opcao = scanner.nextInt();
 
             switch (opcao) {
-                case '1':
+                case 1:
                     adicionarItem(listaCompras, scanner);
                     break;
-                case '2':
+                case 2:
                     exibirLista(listaCompras);
                     break;
-                case '3':
+                case 3:
                     System.out.println("Encerrando o programa.");
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (opcao != '3');
+        } while (opcao != 3);
 
         scanner.close();
     }
 
     public static void adicionarItem(ArrayList<String> listaCompras, Scanner scanner) {
-        scanner.nextLine(); // Limpar o buffer
+        scanner.nextLine();
         System.out.print("Digite o item a ser adicionado à lista de compras: ");
         String item = scanner.nextLine();
         listaCompras.add(item);
